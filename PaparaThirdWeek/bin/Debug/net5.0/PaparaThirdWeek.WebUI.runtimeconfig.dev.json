@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\samet.kayikci\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\samet.kayikci\\.nuget\\packages"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a6dd17be-c0a5-4b3d-a9d1-c7755b3e0ee6": {
+      "ProjectGuid": "a6dd17be-c0a5-4b3d-a9d1-c7755b3e0ee6",
+      "DisplayName": "PaparaThirdWeek.Services",
+      "ColorIndex": 0
+    },
+    "cf394af5-8a59-4173-ac31-4bfefb216026": {
+      "ProjectGuid": "cf394af5-8a59-4173-ac31-4bfefb216026",
+      "DisplayName": "PaparaThirdWeek.Data",
+      "ColorIndex": 1
+    },
+    "2839bd8e-a554-4af8-9340-bf7838546a7a": {
+      "ProjectGuid": "2839bd8e-a554-4af8-9340-bf7838546a7a",
+      "DisplayName": "PaparaThirdWeek.Api",
+      "ColorIndex": 2
+    },
+    "e46d3ad2-e46a-4e9a-a364-c15084bbb4a0": {
+      "ProjectGuid": "e46d3ad2-e46a-4e9a-a364-c15084bbb4a0",
+      "DisplayName": "PaparaThirdWeek.Domain",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
