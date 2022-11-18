@@ -41,11 +41,11 @@ namespace PaparaThirdWeek.Api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "PaparaThirdWeek.Api", Version = "v1" });
             });
-            services.AddDbContext<PaparaAppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));//ekledik
+            services.AddDbContext<PaparaAppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));//eklendi
             services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
             services.AddTransient(typeof(IDapperRepository<>), typeof(DapperRepository<>)); // ekledih
             services.AddTransient<ICompanyService, CompanyServices>();
-            services.AddAutoMapper(typeof(AutoMappingProfile));//buraya geri döncemmmm
+            services.AddAutoMapper(typeof(AutoMappingProfile));//eklemdi
 
             services.AddAutoMapper(cfg =>   // ekledih register ettim.
             {

@@ -15,13 +15,13 @@ namespace PaparaThirdWeek.Services.Concretes
             _companyRepository = companyRepository;
         }
 
-        public async Task<IReadOnlyList<Company>> GetAll()//bakkkkkkk
+        public async Task<IReadOnlyList<Company>> GetAll()
         {
             return await _companyRepository.GetAll();
         }
         public async Task<Company> Get(int id)
         {
-            return await _companyRepository.GetById(id);//bakkkkkkkkkkkk
+            return await _companyRepository.GetById(id);
         }
 
         public async Task<int> Add(Company company)
@@ -36,7 +36,7 @@ namespace PaparaThirdWeek.Services.Concretes
 
         public async Task<int> Delete(int id)
         {
-            return await _companyRepository.DeleteById(id);//dogrumu bakk
+            return await _companyRepository.DeleteById(id);
         }
     }
 }

@@ -7,8 +7,8 @@ namespace PaparaThirdWeek.Services.Abstracts
 {
     public interface ICompanyService
     {
-        public Task<IReadOnlyList<Company>> GetAll(); //yeniledim
-        public Task<Company>Get(int id);//yeniledm
+        public Task<IReadOnlyList<Company>> GetAll(); 
+        public Task<Company>Get(int id);
         public Task<int> Add(Company company);
         public Task<int> Update(Company company, int id);
         public Task<int> Delete(int id);

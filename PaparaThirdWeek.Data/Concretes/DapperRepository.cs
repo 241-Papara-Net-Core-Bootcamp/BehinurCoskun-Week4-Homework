@@ -3,20 +3,17 @@ using Dapper;//ref ekledni ExecuteAsync ile
 using Microsoft.Data.SqlClient;//ref eklendi SqlConnection ile
 using Microsoft.Extensions.Configuration; // ref ekledi Configuration ile
 using PaparaThirdWeek.Data.Abstracts;
-using PaparaThirdWeek.Domain;// ref ile eklendi
+using PaparaThirdWeek.Domain;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace PaparaThirdWeek.Data.Concretes
 {
-    /// <summary>
-    /// bunuda ben yaptım
-    /// </summary>
-    /// <typeparam name="T"></typeparam>
+    
     public class DapperRepository<T> : IDapperRepository<T> where T : BaseEntity
     {
-        public IConfiguration Configuration { get; } //bunu sor anlamadım 
+        public IConfiguration Configuration { get; } 
         private readonly IMapper _mapper;
 
         public DapperRepository(IConfiguration configuration, IMapper mapper)
@@ -39,7 +36,8 @@ namespace PaparaThirdWeek.Data.Concretes
            ,[LastUpdateAt]
            ,[LastUpdateBy])
      VALUES(@Name, @Adress,@City,@TaxNumber,@Email,@IsDeleted,@CreatedDate,@CreatedBy,@LastUpdateAt,@LastUpdateBy)";
-            using (var connection =new SqlConnection(Configuration.GetConnectionString("DefaultConnection")))   //connectionstring'ten connectionu çağırıdm 
+            using (var connection =new SqlConnection(Configuration.GetConnectionString("DefaultConnection"))) 
+                //connectionstring'ten connectionu çağırıdm 
             {
                 connection.Open();
                 var result =await connection.ExecuteAsync(sql,entity);//execute komutu ef deki set metodunun yerine olan metot crud işlemlerini, gerçekleştirmektedir.
