@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace PaparaThirdWeek.Data.Abstracts
 {
-    /// <summary>
-    /// ///////////ben yaptım bu kkısmı
-    /// </summary>
-    /// <typeparam name="T"></typeparam>
+   
     public interface IDapperRepository<T> where T : class
     {
         Task<T> GetById(int id);
