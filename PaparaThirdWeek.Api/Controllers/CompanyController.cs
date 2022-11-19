@@ -52,14 +52,6 @@ namespace PaparaThirdWeek.Api.Controllers
                 return BadRequest();
 
             return Ok();
-
-
-            var newCompany = _mapper.Map<Company>(company);
-            newCompany.CreatedBy = "BehinurTheQueen";
-            newCompany.CreatedDate = DateTime.Now;
-            newCompany.IsDeleted = false;
-
-            return Ok();
         }
 
         [HttpDelete]
