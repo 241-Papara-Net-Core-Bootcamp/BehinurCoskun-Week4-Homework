@@ -39,39 +39,35 @@ namespace PaparaThirdWeek.Api.Controllers
         [HttpPut]
         public async Task<IActionResult> Update(int id, CompanyDto company)
         {
-            var _company = await _companyService.Get(id);
-            if (_company == null)
-            {
+            if (!await _companyService.Update(company, id))
                 return BadRequest();
-            }
 
-            var updatedCompany = _mapper.Map<Company>(company);
-            updatedCompany.Id = _company.Id;
-            updatedCompany.IsDeleted = _company.IsDeleted;
-            updatedCompany.CreatedDate = _company.CreatedDate;
-            updatedCompany.LastUpdateBy = "BhinurTheQueen";
-            updatedCompany.LastUpdateAt = DateTime.Now;
-
-            await _companyService.Update(updatedCompany, id);
             return Ok();
         }
 
         [HttpPost]
         public async Task<IActionResult> Post(CompanyDto company)
         {
+            if (!await _companyService.Add(company))
+                return BadRequest();
+
+            return Ok();
+
+
             var newCompany = _mapper.Map<Company>(company);
             newCompany.CreatedBy = "BehinurTheQueen";
             newCompany.CreatedDate = DateTime.Now;
             newCompany.IsDeleted = false;
 
-            await _companyService.Add(newCompany);
             return Ok();
         }
 
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {
-            await _companyService.Delete(id);
+            if (!await _companyService.Delete(id))
+                return BadRequest();
+                
             return Ok();
         }
         

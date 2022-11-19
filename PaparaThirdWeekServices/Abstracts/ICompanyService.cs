@@ -9,8 +9,8 @@ namespace PaparaThirdWeek.Services.Abstracts
     {
         public Task<IReadOnlyList<Company>> GetAll(); 
         public Task<Company>Get(int id);
-        public Task<int> Add(Company company);
-        public Task<int> Update(Company company, int id);
-        public Task<int> Delete(int id);
+        public Task<bool> Add(CompanyDto company);
+        public Task<bool> Update(CompanyDto company, int id);
+        public Task<bool> Delete(int id);
     }
 }

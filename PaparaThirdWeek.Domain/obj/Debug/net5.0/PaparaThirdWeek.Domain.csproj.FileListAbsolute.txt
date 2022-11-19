@@ -19,6 +19,7 @@ C:\Users\bhnr_\Desktop\paparabootcampyaapılanlar\BehinurCoskun-Week3-Homework-m
 C:\Users\bhnr_\Desktop\paparabootcampyaapılanlar\BehinurCoskun-Week3-Homework-main\BehinurCoskun-Week3-Homework-main\PaparaThirdWeek.Domain\bin\Debug\net5.0\PaparaThirdWeek.Domain.dll
 C:\Users\bhnr_\Desktop\paparabootcampyaapılanlar\BehinurCoskun-Week3-Homework-main\BehinurCoskun-Week3-Homework-main\PaparaThirdWeek.Domain\bin\Debug\net5.0\ref\PaparaThirdWeek.Domain.dll
 C:\Users\bhnr_\Desktop\paparabootcampyaapılanlar\BehinurCoskun-Week3-Homework-main\BehinurCoskun-Week3-Homework-main\PaparaThirdWeek.Domain\bin\Debug\net5.0\PaparaThirdWeek.Domain.pdb
+C:\Users\bhnr_\Desktop\paparabootcampyaapılanlar\BehinurCoskun-Week3-Homework-main\BehinurCoskun-Week3-Homework-main\PaparaThirdWeek.Domain\obj\Debug\net5.0\PaparaThirdWeek.Domain.csproj.AssemblyReference.cache
 C:\Users\bhnr_\Desktop\paparabootcampyaapılanlar\BehinurCoskun-Week3-Homework-main\BehinurCoskun-Week3-Homework-main\PaparaThirdWeek.Domain\obj\Debug\net5.0\PaparaThirdWeek.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\bhnr_\Desktop\paparabootcampyaapılanlar\BehinurCoskun-Week3-Homework-main\BehinurCoskun-Week3-Homework-main\PaparaThirdWeek.Domain\obj\Debug\net5.0\PaparaThirdWeek.Domain.AssemblyInfoInputs.cache
 C:\Users\bhnr_\Desktop\paparabootcampyaapılanlar\BehinurCoskun-Week3-Homework-main\BehinurCoskun-Week3-Homework-main\PaparaThirdWeek.Domain\obj\Debug\net5.0\PaparaThirdWeek.Domain.AssemblyInfo.cs

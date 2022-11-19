@@ -11,8 +11,8 @@ namespace PaparaThirdWeek.Data.Abstracts
     {
         Task<T> GetById(int id);
         Task<IReadOnlyList<T>> GetAll(); 
-        Task<int>Add(T entity);
-        Task<int>Update(T entity, int id);
-        Task<int>DeleteById(int id);
+        Task<bool>Add(T entity);
+        Task<bool> Update(T entity, int id);
+        Task<bool> DeleteById(int id);
     }
 }
